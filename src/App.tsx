@@ -16,12 +16,18 @@ function App(): React.JSX.Element {
             <Container>
                 <Row>
                     <Col>
+                        <style>
+                            width: 50%; height: 50%; backgroundColor: red;
+                        </style>
                         <img
                             src="Onedrive/Sarah - University of Maine System/Slideshow/1713575453058.jpg"
                             alt="A picture of one of my favorite video game characters"
                         />
                     </Col>
                     <Col>
+                        <style>
+                            width: 50%; height: 50%; backgroundColor: red;
+                        </style>
                         <ol>
                             <li>Favorite game: Genshin Impact</li>
                             <li>Second favorite game: Zenless Zone Zero</li>
