@@ -4,24 +4,48 @@ import { Button } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import { Row } from "react-bootstrap";
+import pic from "./1713575453058.png"; // with import
 
 function App(): React.JSX.Element {
     return (
-        <div>
-            <h1>This is my header :)</h1>
-            <p>
-                Edit <code>src/App.tsx</code> and save. This page will
-                automatically reload. Hello World! - Sarah Turmel
-            </p>
-            <Container>
-                <Row>
-                    <Col>
+        <Container>
+            <Row>
+                <div
+                    style={{
+                        backgroundColor: "green",
+                    }}
+                >
+                    <h1>This is my header :)</h1>
+                </div>
+                <Col>
+                    <div
+                        style={{
+                            width: "50%",
+                            height: "100%",
+                            backgroundColor: "red",
+                        }}
+                    >
+                        <p>
+                            Edit <code>src/App.tsx</code> and save. This page
+                            will automatically reload. Hello World! - Sarah
+                            Turmel
+                        </p>
                         <img
-                            src="Onedrive/Sarah - University of Maine System/Slideshow/1713575453058.jpg"
+                            src={pic}
                             alt="A picture of one of my favorite video game characters"
+                            width="100%"
+                            height="70%"
                         />
-                    </Col>
-                    <Col>
+                    </div>
+                </Col>
+                <Col>
+                    <div
+                        style={{
+                            width: "50%",
+                            height: "100%",
+                            backgroundColor: "red",
+                        }}
+                    >
                         <ol>
                             <li>Favorite game: Genshin Impact</li>
                             <li>Second favorite game: Zenless Zone Zero</li>
@@ -34,10 +58,10 @@ function App(): React.JSX.Element {
                         >
                             Log Hello World
                         </Button>
-                    </Col>
-                </Row>
-            </Container>
-        </div>
+                    </div>
+                </Col>
+            </Row>
+        </Container>
     );
 }
 
