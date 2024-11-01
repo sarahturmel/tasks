@@ -1,5 +1,9 @@
 import React from "react";
 import "./App.css";
+import { ChangeType } from "./components/ChangeType";
+import { RevealAnswer } from "./components/RevealAnswer";
+import { TwoDice } from "./components/TwoDice";
+import { Counter } from "./components/Counter";
 import { Button } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import { Col } from "react-bootstrap";
@@ -12,6 +16,14 @@ function App(): React.JSX.Element {
             <header className="App-header" role="banner">
                 <h1>This is my header: UM COS420 Interactive Textbook Parts</h1>
             </header>
+            <hr></hr>
+            <Counter></Counter>
+            <hr />
+            <RevealAnswer></RevealAnswer>
+            <hr />
+            <TwoDice></TwoDice>
+            <hr />
+            <ChangeType></ChangeType>
 
             <Container>
                 <Row>
