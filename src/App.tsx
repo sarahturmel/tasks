@@ -4,11 +4,9 @@ import { ChangeType } from "./components/ChangeType";
 import { RevealAnswer } from "./components/RevealAnswer";
 import { TwoDice } from "./components/TwoDice";
 import { Counter } from "./components/Counter";
-import { Button } from "react-bootstrap";
-import { Container } from "react-bootstrap";
-import { Col } from "react-bootstrap";
-import { Row } from "react-bootstrap";
-import pic from "./1713575453058.png"; // with import
+import { DoubleHalf } from "./bad-components/DoubleHalf";
+import { ColoredBox } from "./bad-components/ColoredBox";
+import { ChooseTeam } from "./bad-components/ChooseTeam";
 
 function App(): React.JSX.Element {
     return (
@@ -16,6 +14,12 @@ function App(): React.JSX.Element {
             <header className="App-header" role="banner">
                 <h1>This is my header: UM COS420 Interactive Textbook Parts</h1>
             </header>
+            <hr></hr>
+            {/* <DoubleHalf></DoubleHalf> */}
+            <hr></hr>
+            <ChooseTeam></ChooseTeam>
+            <hr></hr>
+            <ColoredBox></ColoredBox>
             <hr></hr>
             <Counter></Counter>
             <hr />
