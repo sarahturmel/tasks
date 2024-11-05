@@ -14,6 +14,7 @@ export function ChangeType(): React.JSX.Element {
     }
     return (
         <div>
+            <h3>Change Type</h3>
             <div>
                 <Button onClick={changeQType}>Change Type</Button>
             </div>

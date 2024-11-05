@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button } from "react-bootstrap";
+import { Row, Col, Button } from "react-bootstrap";
 
 /**
  * Here is a helper function you *must* use to "roll" your die.
@@ -24,22 +24,25 @@ export function TwoDice(): React.JSX.Element {
 
     return (
         <div>
-            <div>
-                Left Die: <span data-testid="left-die">{leftDie}</span>
-                <Button onClick={changeLeft}>Roll Left</Button>
-            </div>
-            <div>
-                Right Die: <span data-testid="right-die">{rightDie}</span>
-                <Button onClick={changeRight}>Roll Right</Button>
-            </div>
-            <div>
-                {leftDie === 1 && rightDie === 1 ?
-                    <span>Lose</span>
-                :   <span></span>}
-                {leftDie === rightDie && leftDie !== 1 ?
-                    <span>Win</span>
-                :   <span></span>}
-            </div>
+            <h3>Snake Eyes!</h3>
+            <Row>
+                <Col>
+                    Left Die: <span data-testid="left-die">{leftDie}</span>
+                    <Button onClick={changeLeft}>Roll Left</Button>
+                </Col>
+                <Col>
+                    Right Die: <span data-testid="right-die">{rightDie}</span>
+                    <Button onClick={changeRight}>Roll Right</Button>
+                </Col>
+                <div>
+                    {leftDie === 1 && rightDie === 1 ?
+                        <span>Lose</span>
+                    :   <span></span>}
+                    {leftDie === rightDie && leftDie !== 1 ?
+                        <span>Win</span>
+                    :   <span></span>}
+                </div>
+            </Row>
         </div>
     );
 }
